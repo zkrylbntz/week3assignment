@@ -1,3 +1,64 @@
-* {
-  background-color: azure;
+#main-button {
+  display: block;
+  margin: auto;
+  height: 600px;
+  width: 600px;
 }
+
+#count,
+#per-second,
+h2 {
+  text-align: center;
+}
+
+#1,
+#2,
+#3,
+#4,
+#5,
+#6,
+#7,
+#8,
+#9,
+#10 {
+  width: auto;
+}
+
+#reset-button {
+  display: block;
+  margin: auto;
+}
+
+#shop-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#id-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#cost-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#increase-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#buy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* media queries - not optional*/
