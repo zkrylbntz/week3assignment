@@ -2,7 +2,7 @@ console.log("testline1");
 
 let cookieCount = 0;
 let cookiesPerSecond = 0;
-// let addCookiesPerSecond = 0;
+let addCookiesPerSecond = 0;
 
 const mainClicker = document.getElementById("main-button");
 const resetButton = document.getElementById("reset-button");
@@ -68,11 +68,6 @@ function handleCookieClick() {
   }, 1000);
 }
 
-// setInterval(function (addCookiesPerSecond) {
-//   cookiesPerSecond = cookiesPerSecond + 1;
-//   countCookies.textContent = `Cookie count :- ${cookiesPerSecond}`;
-// }, 1000);
-
 resetButton.addEventListener("click", handleResetClick);
 
 function handleResetClick() {
@@ -80,21 +75,16 @@ function handleResetClick() {
   cookiesPerSecond = 0;
   countCookies.textContent = `Cookie count :- ${cookieCount}`;
   increaseCPS.textContent = `Cookies per second :- ${cookieCount}`;
-  // stopInterval(addCookiesPerSecond);
 }
-
-//cookie button adds amount of cookies in cookies persecond
-//cookies = 0 + 1 etc
-//as well as adding that amount per second
-//cps= 0 , 1, 2, 3, 4 etc
-//upgrades need to update cps and cookies, but be a running total
-//upgrade 5 - 10, 15, 20 ,25
-// or adding on to whatever the number thats added
-//also take away that amount from cookies first, before adding on to click
 
 upgrade1.addEventListener("click", upgrade1Click);
 
 function upgrade1Click() {
-  cookieCount - 5;
+  cookieCount - 100;
   cookiesPerSecond + 5;
 }
+
+//Click button - adds 1 cookie, and starts off Cookies per second.
+//Every click adds to the cookie count, which then adds ontop of Cookies per second.
+//Every item from the bakery firstly takes away cost from overall Cookie count, but then adds to the Cookies per second, then adding to the Cookie count.
+//All the while updating the current Cookie count and Cookies per second.

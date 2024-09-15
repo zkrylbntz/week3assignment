@@ -109,3 +109,47 @@ function handleCounting() {
 }
 
 myCountingButton.addEventListener("click", handleCounting);
+
+
+
+@media (min-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+  }
+  .box {
+    height: 100px;
+    width: 150px;
+    border: solid blue 3px;
+  }
+}
+
+@media (min-width: 700px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3rem;
+  }
+  .box {
+    height: 150px;
+    width: 200px;
+    border: solid blue 5px;
+  }
+}
+
+@media (min-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 4rem;
+  }
+  .box {
+    height: 200px;
+    width: 250px;
+    border: solid blue 7px;
+  }
+}

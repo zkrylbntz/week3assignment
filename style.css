@@ -61,4 +61,29 @@ h2 {
   justify-content: space-evenly;
 }
 
-/* media queries - not optional*/
+/* @media (min-width: 500px) {
+  #main-button {
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+  }
+} */
+
+/* @media (min-width: 400px) {
+  #main-button {
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+  }
+} */
+
+/* @media (min-width: 300px) {
+  #main-button {
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+  }
+} */
